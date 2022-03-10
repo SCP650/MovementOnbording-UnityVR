@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private int coinCount = 0;
+    public int getCoinCount()
+    {
+        return coinCount;
+    }
+
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow))
@@ -32,6 +38,9 @@ public class Player : MonoBehaviour
         if (collision.collider.gameObject.name == "Coin")
         {
             Destroy(collision.collider.gameObject);
+            coinCount += 1;
         }
     }
+
+
 }
