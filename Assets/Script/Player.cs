@@ -14,12 +14,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            this.transform.Translate(Vector3.forward * Time.deltaTime);
+            this.transform.Translate(Vector3.forward * Time.deltaTime * 5);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            this.transform.Translate(Vector3.back * Time.deltaTime);
+            this.transform.Translate(Vector3.back * Time.deltaTime * 5);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
         if (collision.collider.gameObject.name == "Coin")
         {
             Destroy(collision.collider.gameObject);
+            FindObjectOfType<AudioManager>().Play("Coin_Gain");
             coinCount += 1;
         }
     }

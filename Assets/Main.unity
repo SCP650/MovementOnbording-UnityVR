@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 80712716}
   - component: {fileID: 80712715}
   m_Layer: 5
-  m_Name: Floor - Teleportation
+  m_Name: Floor - Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 272448240}
   - component: {fileID: 272448239}
   m_Layer: 5
-  m_Name: Floor - Final
+  m_Name: Floor - Continuous Movement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,6 +1165,70 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1991597632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &408716269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408716270}
+  - component: {fileID: 408716271}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408716270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408716269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3600001, z: 63.465393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408716271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408716269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a047d55a83e44f07bb88f98d97eb08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Coin_Gain
+    clip: {fileID: 8300000, guid: 18304d6496b5c4501aed6a90c3f269ad, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+  - name: Final
+    clip: {fileID: 8300000, guid: cdf253bb8119646138943bd9ac73c7ed, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+  - name: Welcome
+    clip: {fileID: 8300000, guid: 7cec36e1cddf046e68c7961ab7504e37, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
+  - name: Continous
+    clip: {fileID: 8300000, guid: d0cc849fd0f6a4e9382b4dad52cc5339, type: 3}
+    volume: 0.75
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &445901820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1264,7 @@ Transform:
   - {fileID: 472358752}
   - {fileID: 1741475675}
   m_Father: {fileID: 1355014227}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &451105360 stripped
 Transform:
@@ -2288,7 +2352,7 @@ Transform:
   - {fileID: 114220678}
   - {fileID: 1115035777}
   m_Father: {fileID: 1355014227}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &877579537
 PrefabInstance:
@@ -3020,7 +3084,7 @@ GameObject:
   - component: {fileID: 1238528547}
   - component: {fileID: 1238528546}
   m_Layer: 5
-  m_Name: Floor - Continuous Movement
+  m_Name: Floor - Teleportation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3420,9 +3484,9 @@ Transform:
   - {fileID: 368513921}
   - {fileID: 1155985253}
   - {fileID: 185591125}
-  - {fileID: 351087837}
   - {fileID: 445901821}
   - {fileID: 867743680}
+  - {fileID: 351087837}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
