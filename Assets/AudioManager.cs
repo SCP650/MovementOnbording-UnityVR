@@ -19,14 +19,7 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => {
-            //Debug.Log("---------");
-            //Debug.Log(sound.name);
-            //Debug.Log(name);
-            return sound.name == name;
-         });
-
-        Debug.Log(s);
+        Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
     }
 }
